@@ -3,8 +3,9 @@ using System.Collections;
 
 public class AnswerButtonScript : MonoBehaviour {
 	public DialogScript dialog;
-	public int index;
+	public string index;
 	public void setIndex(){
-		dialog.index = index;
+		if(!index.Equals("c")){dialog.index = int.Parse(index);}
+		else{dialog.Close();}
 	}
 }
