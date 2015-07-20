@@ -3,6 +3,7 @@ using System.Collections;
 
 public class NpcScript : MonoBehaviour {
 	public PlayerScript player;
+	public GameObject actions;
 	public NpcActionBase action;
 	public float activeZoneRadius;
 	public bool passive;
@@ -26,7 +27,10 @@ public class NpcScript : MonoBehaviour {
 
 	void OnMouseDown(){
 		if(activated){
-			action.doAction();
+			//action.doAction();
+			actions.transform.position = transform.position;
+			actions.SetActive(true);
+			actions.GetComponent<NpcActionsTemplateScript>().selectNpc(transform.gameObject);
 		}
 	}
 
