@@ -2,7 +2,7 @@
 using System.Collections;
 using UnityEngine.UI;
 public class InventoryCanvasScript : MonoBehaviour {
-	public Image[] inventory;
+	public InventoryGridBlock[] inventory;
 	int from;
 	int to;
 	bool selected = false;
@@ -17,12 +17,9 @@ public class InventoryCanvasScript : MonoBehaviour {
 	}
 	void MoveObject(){
 		selected = false;
-		Sprite objectSprite = inventory [to].sprite;
-		Color objectColor = inventory [to].color;
-		inventory [to].sprite = inventory [from].sprite;
-		inventory [from].sprite = objectSprite;
-
-		inventory [to].color = inventory [from].color;
-		inventory [from].color = objectColor;
+		GameItem item = null;
+		if(inventory[to].itemInMe)item = inventory[to].itemInMe;
+		inventory[to].itemInMe  = inventory[from].itemInMe;
+		inventory[from].itemInMe = item;
 	}
 }
