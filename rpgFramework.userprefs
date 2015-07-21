@@ -1,9 +1,8 @@
 ﻿<Properties>
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="MonoDevelop.Default" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/Moving Scripts/MovingScript.cs">
+  <MonoDevelop.Ide.Workspace />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scripts\Player\Inventory\InventoryCanvasScript.cs">
     <Files>
-      <File FileName="Assets/Scripts/Moving Scripts/MovingScript.cs" Line="22" Column="37" />
-      <File FileName="Assets/Editor/GridBuilder.cs" Line="33" Column="40" />
+      <File FileName="Assets\Scripts\Player\Inventory\InventoryCanvasScript.cs" Line="18" Column="2" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
